@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://kblovett:randomrandom@mern0-3rn56.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://kblovett:randomrandom@mern0-3rn56.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "djangoismycatandheisawesome"
 }
