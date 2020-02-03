@@ -20,8 +20,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
     "mongoose": "^5.8.7",
-    "request": "^2.88.0",
-    "sort-objects-array": "^1.7.1"
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
