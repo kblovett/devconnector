@@ -1,10 +1,16 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Moment from 'react-moment';
+import _ from 'lodash';
 import { connect } from 'react-redux';
 
 const Experience = ({ experience }) => {
-  const experiences = experience.map(exp => (
+  const sortedExperience = _.orderBy(
+    experience,
+    ['to', 'from'],
+    ['desc', 'desc']
+  );
+  const experiences = sortedExperience.map(exp => (
     <tr key={exp._id}>
       <td>{exp.company}</td>
       <td className='hide-sm'>{exp.title}</td>

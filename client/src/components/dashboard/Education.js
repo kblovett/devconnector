@@ -1,10 +1,16 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Moment from 'react-moment';
+import _ from 'lodash';
 import { connect } from 'react-redux';
 
 const Education = ({ education }) => {
-  const educations = education.map(edu => (
+  const sortedEducation = _.orderBy(
+    education,
+    ['to', 'from'],
+    ['desc', 'desc']
+  );
+  const educations = sortedEducation.map(edu => (
     <tr key={edu._id}>
       <td>{edu.school}</td>
       <td className='hide-sm'>{edu.degree}</td>
