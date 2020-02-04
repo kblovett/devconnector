@@ -11,13 +11,13 @@ import {
   GET_REPOS
 } from './types';
 
-// Get current users profile
+// Get current profile
 export const getCurrentProfile = () => async dispatch => {
   try {
     const res = await axios.get('api/profiles/me');
 
     dispatch({
-      type: GET_PROFILES,
+      type: GET_PROFILE,
       payload: res.data
     });
   } catch (err) {
@@ -53,7 +53,7 @@ export const getProfiles = () => async dispatch => {
     const res = await axios.get('api/profiles');
 
     dispatch({
-      type: GET_PROFILE,
+      type: GET_PROFILES,
       payload: res.data
     });
   } catch (err) {
