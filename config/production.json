@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://kblovett:randomrandom@mern0-3rn56.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "djangoismycatandheisawesome",
+  "githubClientID": "3689cd6d93056b9dac66",
+  "githubSecret": "e013e11a6fb60c254722644e288de01f699b8bab"
+}
